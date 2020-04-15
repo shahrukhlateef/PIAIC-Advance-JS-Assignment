@@ -6,5 +6,5 @@ input#wtd{width:100%;padding:15px;box-sizing:border-box;}
 ul#root{margin-left:0;padding-left:0;height:266px;overflow:auto;}
 ul#root li{border:1px solid #ccc;display:block;background:#efefef;padding:10px 20px 10px 40px;text-align:left;position:relative;margin-bottom:5px;text-transform:capitalize;}
 ul#root li.checked{background:#c5c5c5;}
-ul#root li:before{content:"\f00c";position:absolute;left:10px;top:0;font-family:FontAwesome;bottom:0;line-height:3;}
+ul#root li.checked:before{content:"\f00c";position:absolute;left:10px;top:0;font-family:FontAwesome;bottom:0;line-height:3;}
 span.close{width:60px;height:100%;right:0;position:absolute;top:0;text-align:center;font-size:32px;background:red;color:#fff;cursor:pointer;}
