@@ -1,3 +1,9 @@
+// function toDo(){
+// 	var todoInput = document.getElementById('wtd').value;
+// 	//alert(todoInput);
+// 	document.getElementById('root').innerHTML = todoInput;
+// }
+
 // Create a "close" button and append it to each list item
 var closeBtnNode = document.getElementsByTagName("LI");
 for (var i = 0; i < closeBtnNode.length; i++) {
@@ -12,6 +18,7 @@ for (var i = 0; i < closeBtnNode.length; i++) {
 var close = document.getElementsByClassName("close");
 for (var i = 0; i < close.length; i++) {
 	close[i].onclick = function (ev) {
+		// debugger;
 		ev.target.parentElement.remove();
 		//var div = this.parentElement;
 		//div.style.display = "none";
@@ -34,7 +41,9 @@ function toDo() {
 	if (todoInputVal === "") {
 		alert("Please enter value");
 	} else {
-		document.getElementById("root").prepend(li);
+		//document.getElementById("root").prepend(li);
+		var root = document.getElementById("root");
+		root.insertBefore(li, root.childNodes[0]);
 	}
 	document.getElementById("wtd").value = "";
 
@@ -46,6 +55,7 @@ function toDo() {
 
 	for (var i = 0; i < close.length; i++) {
 		close[i].onclick = function (ev) {
+			// debugger;
 			ev.target.parentElement.remove();
 			// var div = this.parentElement;
 			// div.style.display = "none";
